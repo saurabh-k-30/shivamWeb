@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+
+nav {
+  cursor: pointer;
+  height: 100px;
+  width: 100%;
+  /* background-color: crimson; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  /* border-bottom: 2px solid wheat; */
+  position: relative;
+  overflow: hidden;
+  animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+nav img{
+  height: 100px;
+  width: 200px;
+  border-radius: 20px;
+}
+nav #right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 0 30px;
+  /* position: relative;
+  left: 10%; */
+}
+
+/* nav #right a:hover {
+  transition: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  transform: scale(1.5);
+  text-decoration: underline;
+} */
+
+#right a:hover {
+  transition: all 0.3s linear;
+  text-decoration: underline;
+  /* background-color: rgb(233, 50, 50); Add a color change for testing */
+  /* border: 3px solid; */
+  /* border-radius: 10px; */
+  /* transform: scale(1.5); */
+  /* transform: rotate(30); */
+}
+
+
+#img {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shivam {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  height: 90%;
+  /* background-color: red; */
+  font-size: xx-large;
+  overflow: hidden;
+  /* font-weight: 100; */
+  /* text-align: center; */
+}
+
+#shivam h1 {
+  position: relative;
+  top: 20%;
+  left: 2%;
+  /* box-shadow: 8px 8px 8px gold; */
+}
+
+#right a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+#footer{
+  display: flex;
+  justify-content: last baseline;
+  height: 50px;
+  width: 100%;
+  background-color: red;
+  position: relative;
+  top: 70%;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  /* background-color: crimson; */
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+  animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8),
+                0 0 20px rgba(255, 0, 0, 0.8),
+                0 0 30px rgba(255, 0, 0, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(85, 0, 255, 0.8),
+                0 0 10px rgba(85, 0, 255, 0.8),
+                0 0 15px rgba(60, 0, 255, 0.8);
+  }
+}
